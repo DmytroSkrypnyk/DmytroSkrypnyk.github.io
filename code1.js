@@ -83,7 +83,7 @@ if (gdjs.Level_321Code.condition1IsTrue_0.val) {
 }
 
 
-};gdjs.Level_321Code.userFunc0x7db5c8 = function(runtimeScene) {
+};gdjs.Level_321Code.userFunc0x703c80 = function(runtimeScene) {
 "use strict";
 const delay = time => new Promise(res=>setTimeout(res,time));
 
@@ -117,7 +117,7 @@ gdjs.Level_321Code.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Level_321Code.userFunc0x7db5c8(runtimeScene);
+gdjs.Level_321Code.userFunc0x703c80(runtimeScene);
 
 }
 
