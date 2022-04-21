@@ -43,13 +43,9 @@ gdjs.Scene2Code.condition0IsTrue_0.val = false;
 {
 gdjs.Scene2Code.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)) <= 33;
 }if (gdjs.Scene2Code.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Background1"), gdjs.Scene2Code.GDBackground1Objects2);
 gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.Scene2Code.GDBallObjects2);
 gdjs.copyArray(runtimeScene.getObjects("Obstacle"), gdjs.Scene2Code.GDObstacleObjects2);
-{for(var i = 0, len = gdjs.Scene2Code.GDBackground1Objects2.length ;i < len;++i) {
-    gdjs.Scene2Code.GDBackground1Objects2[i].setXOffset(gdjs.Scene2Code.GDBackground1Objects2[i].getXOffset() + (200 * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
-}
-}{for(var i = 0, len = gdjs.Scene2Code.GDBallObjects2.length ;i < len;++i) {
+{/* Unknown object - skipped. */}{for(var i = 0, len = gdjs.Scene2Code.GDBallObjects2.length ;i < len;++i) {
     gdjs.Scene2Code.GDBallObjects2[i].rotate(50, runtimeScene);
 }
 }{for(var i = 0, len = gdjs.Scene2Code.GDObstacleObjects2.length ;i < len;++i) {
@@ -118,37 +114,19 @@ gdjs.copyArray(runtimeScene.getObjects("Obstacle"), gdjs.Scene2Code.GDObstacleOb
 }
 
 
-};gdjs.Scene2Code.userFunc0x7e4948 = function(runtimeScene) {
+};gdjs.Scene2Code.userFunc0x82a408 = function(runtimeScene) {
 "use strict";
+const ballPosition = runtimeScene.getObjects("Ball")[0]
 
-const run = async () => {
-  let url = 'https://api.kanye.rest/';
-  let response = await fetch(url);
-
-    const params = new Proxy(new URLSearchParams(window.location.search), {
-    get: (searchParams, prop) => searchParams.get(prop),
-  });
-
-  let value = params.private_key || 'none';
-
-
-  let commits = await response.json();
-  const ballPosition = runtimeScene.getObjects("Ball")[0]
-
-  runtimeScene.getVariables().get("ObstaclePosition").setNumber(ballPosition.getCenterYInScene() - 50)
-  runtimeScene.getVariables().get("ShowObstacle").setNumber(1)
-
-
-}
-
-run()
+runtimeScene.getVariables().get("ObstaclePosition").setNumber(ballPosition.getCenterYInScene() - 50)
+runtimeScene.getVariables().get("ShowObstacle").setNumber(1)
 };
 gdjs.Scene2Code.eventsList1 = function(runtimeScene) {
 
 {
 
 
-gdjs.Scene2Code.userFunc0x7e4948(runtimeScene);
+gdjs.Scene2Code.userFunc0x82a408(runtimeScene);
 
 }
 
@@ -386,13 +364,82 @@ gdjs.Scene2Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerElap
 }if ( gdjs.Scene2Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Scene2Code.conditionTrue_1 = gdjs.Scene2Code.condition1IsTrue_0;
-gdjs.Scene2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8346188);
+gdjs.Scene2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7879604);
 }
 }}
 if (gdjs.Scene2Code.condition1IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(5);
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Scene3", true);
 }}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+{
+gdjs.copyArray(runtimeScene.getObjects("Ball"), gdjs.Scene2Code.GDBallObjects1);
+{/* Unknown object - skipped. */}{for(var i = 0, len = gdjs.Scene2Code.GDBallObjects1.length ;i < len;++i) {
+    gdjs.Scene2Code.GDBallObjects1[i].setAnimation(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3)));
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.Scene2Code.condition0IsTrue_0.val = false;
+{
+gdjs.Scene2Code.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4)) == 0;
+}if (gdjs.Scene2Code.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Background1"), gdjs.Scene2Code.GDBackground1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Background2"), gdjs.Scene2Code.GDBackground2Objects1);
+{for(var i = 0, len = gdjs.Scene2Code.GDBackground1Objects1.length ;i < len;++i) {
+    gdjs.Scene2Code.GDBackground1Objects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.Scene2Code.GDBackground2Objects1.length ;i < len;++i) {
+    gdjs.Scene2Code.GDBackground2Objects1[i].hide();
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.Scene2Code.condition0IsTrue_0.val = false;
+{
+gdjs.Scene2Code.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4)) == 1;
+}if (gdjs.Scene2Code.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Background1"), gdjs.Scene2Code.GDBackground1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Background2"), gdjs.Scene2Code.GDBackground2Objects1);
+{for(var i = 0, len = gdjs.Scene2Code.GDBackground2Objects1.length ;i < len;++i) {
+    gdjs.Scene2Code.GDBackground2Objects1[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.Scene2Code.GDBackground1Objects1.length ;i < len;++i) {
+    gdjs.Scene2Code.GDBackground1Objects1[i].hide();
+}
+}}
+
+}
+
+
+{
+
+
+{
+}
 
 }
 
