@@ -57,7 +57,7 @@ gdjs.Scene1Code.condition2IsTrue_1 = {val:false};
 gdjs.Scene1Code.condition3IsTrue_1 = {val:false};
 
 
-gdjs.Scene1Code.userFunc0x82ad20 = function(runtimeScene) {
+gdjs.Scene1Code.userFunc0x792668 = function(runtimeScene) {
 "use strict";
 const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
@@ -84,7 +84,7 @@ gdjs.Scene1Code.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Scene1Code.userFunc0x82ad20(runtimeScene);
+gdjs.Scene1Code.userFunc0x792668(runtimeScene);
 
 }
 
@@ -163,7 +163,7 @@ gdjs.Scene1Code.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPresse
 }if ( gdjs.Scene1Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Scene1Code.conditionTrue_1 = gdjs.Scene1Code.condition1IsTrue_0;
-gdjs.Scene1Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7359676);
+gdjs.Scene1Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8524356);
 }
 }}
 if (gdjs.Scene1Code.condition1IsTrue_0.val) {
@@ -215,7 +215,7 @@ gdjs.Scene1Code.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPresse
 }if ( gdjs.Scene1Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Scene1Code.conditionTrue_1 = gdjs.Scene1Code.condition1IsTrue_0;
-gdjs.Scene1Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7325804);
+gdjs.Scene1Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8527556);
 }
 }}
 if (gdjs.Scene1Code.condition1IsTrue_0.val) {

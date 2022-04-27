@@ -114,11 +114,11 @@ gdjs.copyArray(runtimeScene.getObjects("Obstacle"), gdjs.Scene2Code.GDObstacleOb
 }
 
 
-};gdjs.Scene2Code.userFunc0x82a408 = function(runtimeScene) {
+};gdjs.Scene2Code.userFunc0x705658 = function(runtimeScene) {
 "use strict";
 const ballPosition = runtimeScene.getObjects("Ball")[0]
 
-runtimeScene.getVariables().get("ObstaclePosition").setNumber(ballPosition.getCenterYInScene() - 50)
+runtimeScene.getVariables().get("ObstaclePosition").setNumber(ballPosition.getCenterYInScene())
 runtimeScene.getVariables().get("ShowObstacle").setNumber(1)
 };
 gdjs.Scene2Code.eventsList1 = function(runtimeScene) {
@@ -126,7 +126,7 @@ gdjs.Scene2Code.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Scene2Code.userFunc0x82a408(runtimeScene);
+gdjs.Scene2Code.userFunc0x705658(runtimeScene);
 
 }
 
@@ -364,7 +364,7 @@ gdjs.Scene2Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.getTimerElap
 }if ( gdjs.Scene2Code.condition0IsTrue_0.val ) {
 {
 {gdjs.Scene2Code.conditionTrue_1 = gdjs.Scene2Code.condition1IsTrue_0;
-gdjs.Scene2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7879604);
+gdjs.Scene2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8555604);
 }
 }}
 if (gdjs.Scene2Code.condition1IsTrue_0.val) {
